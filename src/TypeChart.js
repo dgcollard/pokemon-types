@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import bem from 'bem-cn';
+import PikachuLogo from './PikachuLogo';
 import TypeButton from './TypeButton';
 import TypeChartAttackHeader from './TypeChartAttackHeader';
 import TypeEffectiveness from './TypeEffectiveness';
@@ -30,7 +31,8 @@ class TypeChart extends Component {
         <table>
           <thead className={block('defend')}>
             <tr>
-              <th rowSpan="2"></th>
+              <th rowSpan="2">
+              </th>
               <th colSpan={this.props.types.length + 1}>
                 Defending
                 {this.state.defendType ? ` ${this.state.defendType.label} ` : ' '}
@@ -38,7 +40,9 @@ class TypeChart extends Component {
               </th>
             </tr>
             <tr>
-              <th></th>
+              <th>
+                <PikachuLogo />
+              </th>
               {this.props.types.map((defendType, i) => (
                 <th
                   className={block('defend')('selector')}
