@@ -1,0 +1,20 @@
+.type-effectiveness_double-weak {
+  background-color: #FF4444;
+}
+
+.type-effectiveness_weak {
+  background-color: #FF9999;
+}
+
+.type-effectiveness_strong {
+  background-color: #99FF99;
+}
+
+.type-effectiveness_double-strong {
+  background-color: #44FF44;
+  font-weight: bold;
+}
+
+.type-effectiveness_immune {
+  background-color: #BBBBBB;
+}

@@ -1,0 +1,10 @@
+.type-chart__attack-header {
+  width: 1em;
+}
+
+.type-chart__attack-header__label {
+  position: absolute;
+  left: -3em;
+
+  transform: rotate(-90deg);
+}
